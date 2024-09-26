@@ -6,7 +6,7 @@ import tailwind from '@astrojs/tailwind';
 
 // https://astro.build/config
 export default defineConfig({
-    site:'https://jiadbuniverse.github.io/jdb_web-home/',
+    site:'https://jiadbuniverse.github.io/jdb_web-home',
     integrations: [starlight({
         title: '记多宝',
         
