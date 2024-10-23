@@ -1,0 +1,10 @@
+---
+    import VueDemo from './pc/vue/demo.vue'
+    import SvelteDemo from './pc/svelte/demo.svelte'
+    import DemoReact from './pc/react/demo'
+---
+<div class="w-full h-[800px] border">
+    <VueDemo client:load />
+    <SvelteDemo client:load />
+    <DemoReact client:load/>
+</div>

@@ -4,6 +4,12 @@ import starlight from '@astrojs/starlight';
 
 import tailwind from '@astrojs/tailwind';
 
+import vue from '@astrojs/vue';
+
+import react from '@astrojs/react';
+
+import svelte from '@astrojs/svelte';
+
 // https://astro.build/config
 export default defineConfig({
     site:'https://jiadbuniverse.github.io/jdb_web-home',
@@ -41,5 +47,5 @@ export default defineConfig({
     }), tailwind({
         // 禁用默认的基础样式
         applyBaseStyles: false,
-    })],
+    }), vue(), react(), svelte()],
 });

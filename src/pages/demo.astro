@@ -1,0 +1,22 @@
+---
+import StarlightPage from "@astrojs/starlight/components/StarlightPage.astro";
+import { Tabs, TabItem } from "@astrojs/starlight/components";
+import PC  from "../components/demo/pc.astro"
+import Mobile from "../components/demo/mobile.astro";
+import Pad from "../components/demo/pad.astro";
+const items = ["PC端", "移动端", "平板端"];
+---
+
+<StarlightPage
+    frontmatter={{ title: "在线Demo（开发版）", template: "splash" }}
+>
+    <Tabs>
+        {
+            items.map((item) => (
+                <TabItem label={item}>
+                    { item=='PC端'?<PC />:item=='移动端'? <Mobile/>:<Pad/>}
+                </TabItem>
+            ))
+        }
+    </Tabs>
+</StarlightPage>

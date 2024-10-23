@@ -1,7 +1,12 @@
 ---
-import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+import StarlightPage from "@astrojs/starlight/components/StarlightPage.astro";
+import { LinkCard } from "@astrojs/starlight/components";
 ---
 
-<StarlightPage frontmatter={{ title: '记多宝',template:'splash' }}>
-  <p class="dark:text-blue-200">记多宝首页</p>
+<StarlightPage frontmatter={{ title: "记多宝", template: "splash" }}>
+  <LinkCard
+    title="记多宝在线demo"
+    href="/jdb_web-home/demo"
+    description="多平台的记多宝在线demo演示"
+  />
 </StarlightPage>
